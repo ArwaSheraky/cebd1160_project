@@ -3,7 +3,7 @@ Instructions and template for final projects.
 
 | Name | Date |
 |:-------|:---------------|
-|Your name here | Completion date|
+| Arwa Sheraky | Completion date |
 
 -----
 
