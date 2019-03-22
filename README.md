@@ -28,13 +28,15 @@ Knowing the average prices of houses in suburbs of Boston from the 1970 and the 
 - resolution (what did we end up producing)
 
 ### Introduction
-The dataset used in this project, is publically shared on scikit-learn [here](https://scikit-learn.org/stable/datasets/index.html#boston-dataset), which could be explicitly imported into any python app, from `sklearn` library, by running: `from sklearn.datasets import load_boston`.
+The dataset used in this project, is publically shared on scikit-learn [datasets](https://scikit-learn.org/stable/datasets/index.html#boston-dataset), which could be explicitly imported into any python app, from `sklearn` library.
 
 ### Methods
 
 By applying different regressors, comparing their performance and [RMSE](https://www.statisticshowto.datasciencecentral.com/rmse/), **Gradient Boosting Regressor** was the best one to solve the problem and predict the average prices as close to the real values as possible.
 
-Gradient Boosting Regressor, and all the other used regressors too, is built-into scikit-learn. Algorithm of the regressor can be found [here](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor). 
+![Models Comparison](./Figures/Regression_Models.png)
+
+Gradient Boosting Regressor, and all the other used regressors too, is built-into scikit-learn. Algorithm of the regressor can be found [here](https://en.wikipedia.org/wiki/Gradient_boosting#Algorithm), and how the regressor works on python is on scikit-learn documentation: [`sklearn.ensemble.GradientBoostingRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor).
 
 ### Results
 
