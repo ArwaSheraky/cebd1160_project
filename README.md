@@ -1,29 +1,26 @@
-# cebd1160_project_template
-Instructions and template for final projects.
+# cebd-1160: Boston Housing Data
+Final Project.
 
 | Name | Date |
 |:-------|:---------------|
-| Arwa Sheraky | Completion date |
+| Arwa Sheraky | 22-3-2019 |
 
 -----
 
 ### Resources
-Your repository should include the following:
+This repository includes:
 
-- Python script for your analysis
-- Results figure/saved file
-- Dockerfile for your experiment
-- runtime-instructions in a file named RUNME.md
+- Python script for boston-housing-data analysis: `python_boston.py`
+- Results figures: `Figures/`
+- Dockerfile for experiment: `Dockerfile`
+- runtime-instructions: `RUNME.md`
 
 -----
 
 ## Research Question
-
-1 sentence description of your research question.
+Knowing the average prices of houses in suburbs of Boston from the 1970 and the features that could affect them, could we predict the average prices of new houses, having these 13 features?
 
 ### Abstract
-
-4 sentence longer explanation about your research question. Include:
 
 - opportunity (what data do we have)
 - challenge (what is the "problem" we could solve with this dataset)
@@ -31,15 +28,13 @@ Your repository should include the following:
 - resolution (what did we end up producing)
 
 ### Introduction
-
-Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
+The dataset used in this project, is publically shared on scikit-learn [here](https://scikit-learn.org/stable/datasets/index.html#boston-dataset), which could be explicitly imported into any python app, from `sklearn` library, by running: `from sklearn.datasets import load_boston`.
 
 ### Methods
 
-Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
+By applying different regressors, comparing their performance and [RMSE](https://www.statisticshowto.datasciencecentral.com/rmse/), **Gradient Boosting Regressor** was the best one to solve the problem and predict the average prices as close to the real values as possible.
 
-- pseudocode for this method (either created by you or cited from somewhere else)
-- why you chose this method
+Gradient Boosting Regressor, and all the other used regressors too, is built-into scikit-learn. Algorithm of the regressor can be found [here](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor). 
 
 ### Results
 
