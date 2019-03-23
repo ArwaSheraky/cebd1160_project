@@ -1,4 +1,4 @@
-# cebd-1160: Boston Housing Data
+# cebd-1160: Boston Housing Data Analysis
 
 | Name | Date |
 |:-------|:---------------|
@@ -9,7 +9,7 @@
 ### Resources
 This repository includes:
 
-- Python script for boston-housing-data analysis: `python_boston.py`
+- Python script for boston-housing-data analysis: `boston_analysis.py`
 - Results figures: `Figures/`
 - Dockerfile for experiment: `Dockerfile`
 - runtime-instructions: `RUNME.md`
