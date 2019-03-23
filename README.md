@@ -31,7 +31,7 @@ The dataset used in this project, is publically shared on scikit-learn [datasets
 
 ### Methods
 
-By applying different regressors, comparing their performance and [MSE](https://en.wikipedia.org/wiki/Mean_squared_error), we can find the best one to solve the problem.
+By applying different regressors, comparing their performance using [R-squared](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html) and [MSE](https://en.wikipedia.org/wiki/Mean_squared_error), we can find the best one to solve the problem.
 
 The used methods are:
 - [Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression).
@@ -43,9 +43,8 @@ The used methods are:
 
 ### Results
 
-As shown in previous figure, **Gradient Boosting Regressor** was the best model to predict the average prices as close to the real values as possible.
-Gradient Boosting Regressor, and all the other used regressors too, is built-into scikit-learn. Algorithm of the regressor can be found [here](https://en.wikipedia.org/wiki/Gradient_boosting#Algorithm), and how the regressor works on python is on scikit-learn documentation: [`sklearn.ensemble.GradientBoostingRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor).
-
+As shown in previous figure, **Gradient Boosting Regressor** was the best model to predict the average prices as close to the real values as possible, with minimum MSE and maximum R-Squared.
+The algorithm of the Gradient Boosting regressor can be found [here](https://en.wikipedia.org/wiki/Gradient_boosting#Algorithm), and how the regressor works on python is on scikit-learn documentation, mentioned above.
 
 ### Discussion
 Brief (no more than 1-2 paragraph) description about what you did. Include:
