@@ -2,7 +2,7 @@
 
 | Name | Date |
 |:-------|:---------------|
-| Arwa Sheraky | 22-3-2019 |
+| Arwa Sheraky | 28-3-2019 |
 
 -----
 
@@ -33,17 +33,25 @@ The dataset used in this project, is publically shared on scikit-learn [datasets
 
 By applying different regressors, comparing their performance using [R-squared](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html) and [MSE](https://en.wikipedia.org/wiki/Mean_squared_error), we can find the best one to solve the problem.
 
-The used methods are:
+The used regressors are:
 - [Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression).
-- [Gradient Boosting](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor).
-- [Lasso](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso).
 - [Bayesian Ridge](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.BayesianRidge.html#sklearn.linear_model.BayesianRidge).
+- [Lasso](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso).
+- [Gradient Boosting](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor).
 
-![Models Comparison](./Figures/Regression_Models.png)
+After choosing the best regressor, we can use Cross Validation, to identify the best k-fold, that predicts the prices as close as possible.
 
 ### Results
 
-As shown in previous figure, **Gradient Boosting Regressor** was the best model to predict the average prices as close to the real values as possible, with minimum MSE and maximum R-Squared.
+![Models Comparison](./Figures/Regression_Models.png)
+
+| Linear Regression | Bayesian Ridge | Lasso | Gradient Boosting |
+|:---------------|:---------------|:---------------|
+| MSE | - | - | - | - |
+| R-squared | - | - | - | - |
+
+
+As shown in the figure and performance table, **Gradient Boosting Regressor** was the best model to predict the average prices as close to the real values as possible, with minimum MSE and maximum R-Squared.
 The algorithm of the Gradient Boosting regressor can be found [here](https://en.wikipedia.org/wiki/Gradient_boosting#Algorithm), and how the regressor works on python is on scikit-learn documentation, mentioned above.
 
 ### Discussion
